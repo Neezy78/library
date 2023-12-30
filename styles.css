@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+/* header */
+
+.header {
+  margin-bottom: 50px;
+}
+
+/* user interactions section */
+
+.add-book-section {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  color: white;
+  background-color: rgb(128, 116, 116);
+  width: 500px;
+  height: 300px;
+  justify-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+.show-add-book {
+  display: flex;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(131, 0, 0, 0.554);
+  z-index: 1;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.add-book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(180deg);
+}
+
+.add > label {
+  display: inline-block;
+  width: 100px;
+}
+
+.add > input {
+}
+
+.add > label,
+input {
+  margin: 10px 0;
+}
+/* display section */
+.display-books {
+  width: 100vw;
+  padding: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 50px;
+  margin: 50px;
+}
+.card {
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+/* read buttons */
+.btn-light-green {
+  background-color: lightgreen;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
+.btn-light-red {
+  background-color: rgb(255, 82, 82);
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
